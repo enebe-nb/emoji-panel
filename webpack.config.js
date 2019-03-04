@@ -37,7 +37,7 @@ module.exports = {
   .reduce((obj, fileName) => {
     const entryName = 'emoji-panel-' + path.basename(fileName).replace('.acss.js', '');
     return Object.assign(obj, {
-      [entryName]: [fileName, './src/emoji-panel.scss']
+      [entryName]: [fileName, './src/emoji-panel.acss.js']
     });
   }, {})),
   output: {
@@ -81,10 +81,6 @@ module.exports = {
       {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract('style', 'css')
-      },
-      {
-        test: /\.scss$/,
-        loader: ExtractTextPlugin.extract('style', 'css!sass')
       },
       {
         test: /\.ahtml.js$/,
