@@ -1,108 +1,129 @@
 @font-face {
-  font-family: 'apple-category';
-  src: url(./asset/apple.ttf) format("truetype");
-  font-weight: normal;
-  font-style: normal; }
+    font-family: 'apple-category';
+    src: url(./asset/apple.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 .cat {
-  font-family: 'apple-category' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+    font-family: 'apple-category' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
 .cat-0:before {
-  content: "\E900"; }
-
+    content: "\E900";
+}
 .cat-1:before {
-  content: "\E901"; }
-
+    content: "\E901";
+}
 .cat-2:before {
-  content: "\E902"; }
-
+    content: "\E902";
+}
 .cat-4:before {
-  content: "\E903"; }
-
+    content: "\E903";
+}
 .cat-8:before {
-  content: "\E904"; }
-
+    content: "\E904";
+}
 .cat-16:before {
-  content: "\E905"; }
-
+    content: "\E905";
+}
 .cat-64:before {
-  content: "\E907"; }
-
+    content: "\E907";
+}
 .cat-32:before {
-  content: "\E908"; }
+    content: "\E908";
+}
+.cat-128:before {
+    content: "\E906";
+}
 
-.ep {
+.ep, .ep-container {
   height: 100%;
+}
+.ep, .ep-categories, .ep-emojies-c {
   display: flex;
+}
+.ep {
   flex-direction: column;
   user-select: none;
+  moz-user-select: none;
+  -webkit-moz-user-select: none;
+  -moz-moz-user-select: none;
+  -ms-moz-user-select: none;
+  -o-moz-user-select: none;
+  webkit-user-select: none;
+  -webkit-webkit-user-select: none;
+  -moz-webkit-user-select: none;
+  -ms-webkit-user-select: none;
+  -o-webkit-user-select: none;
   -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none; }
-  .ep ::-webkit-scrollbar {
-    width: 6px !important; }
-  .ep ::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.2); }
-  .ep ::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.08); }
-
-.ep-container {
-  height: 100%; }
-
+  -ms-user-select: none;
+}
 .ep-categories {
   padding: 3px 0;
-  display: flex;
+  background-color: #fff;
+}
+.ep-categories, .ep-emojies {
   position: relative;
-  background-color: #fff; }
-
-.ep-slide {
+}
+.ep-slide, .ep-emojies-c:last-child {
   position: absolute;
+}
+.ep-slide {
   height: 3px;
   will-change: margin-left;
   transition: margin-left ease-in-out;
   background-color: #93D3CC;
-  bottom: 0; }
-
-.ep-c {
+  bottom: 0;
+}
+.ep-c, .ep-emojies .ep-e {
   cursor: pointer;
+}
+.ep-c, .ep-emojies {
   flex: 1 1;
+}
+.ep-c {
   text-align: center;
   color: silver;
-  opacity: 1; }
-  .ep-c :hover {
-    opacity: 0.8; }
-
+  opacity: 1;
+}
+.ep-c:hover {
+  opacity: 0.8;
+}
 .ep-c-text {
-  display: none; }
-
+  display: none;
+}
 .ep-emojies {
-  flex: 1 1;
   background-color: #F0F0F0;
-  position: relative;
   height: calc(100% - 40px);
-  overflow-y: auto; }
-  .ep-emojies .ep-e {
-    margin: 6px;
-    cursor: pointer; }
-
+  overflow-y: auto;
+}
+.ep-emojies .ep-e {
+  margin: 6px;
+}
 .ep-emojies-c {
-  display: flex;
   flex-wrap: wrap;
-  align-content: flex-start; }
-  .ep-emojies-c:last-child {
-    position: absolute;
-    min-height: 100%; }
+  align-content: flex-start;
+}
+.ep-emojies-c:last-child {
+  min-height: 100%;
+}
+.ep-e-custom {
+  background-size: contain;
+}
+.ep::-webkit-scrollbar {             width: 6px!important                    }                                         .ep::-webkit-scrollbar-thumb {              background-color: rgba(0,0,0,.2)        }                                         .ep::-webkit-scrollbar-track {              background: rgba(255,255,255,.08)       }                                       
 .ep {
-  min-width: 160px;
+  min-width: 180px;
 }
 .ep-categories {
   font-size: 20px;
@@ -115,7 +136,7 @@
   background-image: url(./asset/sheet_apple_20.png);
 }
 .ep-slide {
-  width: 12.5%;
+  width: 11.11111111111111%;
 }
 .ep-e[data-index="831"] {
   background-position: -520px -300px;

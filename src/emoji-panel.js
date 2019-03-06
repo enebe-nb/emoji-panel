@@ -2,7 +2,7 @@ import { IMAGE_SET, SIZE } from './constant';
 import createPanel from './create-panel';
 
 module.exports = class EmojiPanel {
-  constructor(el, { animationDuration = 300, onClick } = {}) {
+  constructor(el, { animationDuration = 300, onClick, customEmojis } = {}) {
     if (__DEV__) {
       if (!(el && el.nodeType)) {
         throw new Error('Element must be provided to the first argument of `EmojiPanel` constructor.');
@@ -19,7 +19,8 @@ module.exports = class EmojiPanel {
 
     const windowImageSet = createPanel({
       animationDuration,
-      eventListeners: this._eventListeners
+      eventListeners: this._eventListeners,
+      customEmojis: customEmojis,
     });
 
     el.innerHTML = '';

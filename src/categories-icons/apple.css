@@ -43,3 +43,6 @@
 .cat-32:before {
     content: "\e908";
 }
+.cat-128:before {
+    content: "\e906";
+}

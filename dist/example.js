@@ -46,13 +46,13 @@ var EmojiPanel =
 /***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
-	__webpack_require__(61);
-	module.exports = __webpack_require__(62);
+	__webpack_require__(62);
+	module.exports = __webpack_require__(63);
 
 
 /***/ }),
 
-/***/ 61:
+/***/ 62:
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -117,7 +117,7 @@ var EmojiPanel =
 
 /***/ }),
 
-/***/ 62:
+/***/ 63:
 /***/ (function(module, exports) {
 
 	// removed by extract-text-webpack-plugin

@@ -20,7 +20,8 @@ const CATEGORY = {
   OBJECTS: 8,
   PEOPLE: 16,
   PLACES: 32,
-  SYMBOLS: 64
+  SYMBOLS: 64,
+  CUSTOM: 128
 };
 
 module.exports = { IMAGE_SET, SIZE, CATEGORY };

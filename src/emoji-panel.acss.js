@@ -63,6 +63,9 @@ module.exports = api => {
         'min-height': '100%',
       }
     },
+    '.ep-e-custom': {
+      'background-size': 'contain',
+    },
   });
 
   api.raw('.ep::-webkit-scrollbar {       \

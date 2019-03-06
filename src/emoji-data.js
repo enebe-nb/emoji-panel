@@ -12,4 +12,5 @@ const sortedEmojiData = emojiData
     });
   }, {});
 
+  sortedEmojiData[require('./constant').CATEGORY.CUSTOM] = [];
 module.exports = sortedEmojiData;
